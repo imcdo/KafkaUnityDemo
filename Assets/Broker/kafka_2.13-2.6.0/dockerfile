@@ -1,8 +1,0 @@
-FROM openjdk:11
-
-RUN mkdir /usr/kafka
-COPY . /usr/kafka
-
-EXPOSE ${PORT}
-
-CMD "/usr/kafka/bin/kafka-server-start.sh /usr/kafka/${properties}"
